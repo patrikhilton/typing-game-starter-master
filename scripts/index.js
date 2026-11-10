@@ -40,3 +40,10 @@ let score = 0;
 
 //Initializing time
 let time = 10;
+
+function addWordToDOM() {
+  randomWord = words[Math.floor(Math.random() * words.length)];  // pick a random word
+  word.textContent = randomWord;                                 // show it on the page
+}
+
+addWordToDOM();   // run it once, so a word shows when the game starts
