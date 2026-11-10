@@ -51,10 +51,6 @@ function updateScore() {
   scoreEl.textContent = score;
 }
 
-function updateTime() {
-  time--;
-  timeEl.textContent = time + "s";
-}
 
 text.addEventListener("input", function () {
   if (text.value === randomWord) {
@@ -66,3 +62,14 @@ text.addEventListener("input", function () {
 });
 
 addWordToDOM();   // run it once, so a word shows when the game starts
+
+function updateTime() {
+  time--;
+  timeEl.textContent = time + "s";
+
+  if (time === 0) {
+    clearInterval(timeInterval);
+  }
+}
+
+const timeInterval = setInterval(updateTime, 1000);
