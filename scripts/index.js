@@ -46,4 +46,9 @@ function addWordToDOM() {
   word.textContent = randomWord;                                 // show it on the page
 }
 
+function updateScore() {
+  score++;
+  scoreEl.textContent = score;
+}
+
 addWordToDOM();   // run it once, so a word shows when the game starts
