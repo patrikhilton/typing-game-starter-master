@@ -51,6 +51,11 @@ function updateScore() {
   scoreEl.textContent = score;
 }
 
+function updateTime() {
+  time--;
+  timeEl.textContent = time + "s";
+}
+
 text.addEventListener("input", function () {
   if (text.value === randomWord) {
      updateScore();
