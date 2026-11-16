@@ -1,0 +1,8 @@
+PROJECT 1
+Name: Typing Game
+Screenshot: /images/typing-game.jpg
+GitHub: https://github.com/patrikhilton/typing-game-starter-master
+Tech: HTML, CSS, JavaScript (DOM)
+What it does: A typing game where a random word appears and you type it before the time runs out. Each correct word gives a point and 5 extra seconds. When the time reaches zero, a game-over screen shows your score.
+What I learned: How to change a web page with JavaScript (the DOM), how to react to typing with an event listener, and how to make a countdown with setInterval and stop it with clearInterval.
+Challenges: Getting the timer to stop at zero.
